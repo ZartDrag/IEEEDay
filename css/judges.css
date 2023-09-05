@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+
+ a {
+	 color: inherit;
+	 text-decoration: none;
+}
+ .panels {
+	 display: grid;
+	 margin-top: 20px;
+	 grid-template-columns: repeat(4, 1fr);
+	 flex-wrap: wrap;
+   	 justify-content: center;
+	 padding: 0 10em 0 10em;
+	 position: relative;
+    gap: 1em;
+   /* width: 100%; */
+}
+
+/* .yatin{
+	display: grid;
+	grid-template-columns: repeat(3 ,1fr) !important;
+	width: 80%;
+	justify-content: center;
+	margin-left: 10%;
+} */
+
+.title .author .mobile{
+	color:white !important;
+}
+
+.event-schedule .jhand h1{
+    text-align: center !important;
+}
+ .panels .panel {
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	 flex-shrink: 0;
+	 width: 15em;
+	 height: 19em;
+	 outline: 0.25em solid rgba(26, 97, 203, 0);
+	 transition: 500ms;
+	 position: relative;
+}
+
+ /* .panels .panel:not(:last-child) {
+	 margin-right: 1.5em;
+} */
+ .panels .panel .background:after, .panels .panel .text > * {
+	 transition: transform 200ms, opacity 200ms;
+}
+ .panels .panel .background {
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 transition: 100ms;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+}
+ .panels .panel .background:before, .panels .panel .background:after {
+	 content: '';
+	 display: block;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+}
+ .panels .panel .background:before {
+	 opacity: 0;
+}
+ .panels .panel .background:after {
+	 opacity: 0.4;
+	 background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgb(0,0,0,0.6) 70%, rgba(255,61,56,0.6) 100%);
+}
+ .panels .panel .text {
+	 cursor: default;
+	 position: absolute;
+	 left: 1em;
+	 right: 1em;
+	 bottom: -2.5em;
+     text-shadow: 0px 0px 10px #ffffff;
+}
+ .panels .panel .text .location {
+	 font-weight: 100;
+	 font-size: 1em;
+	 margin-bottom: 1em;
+     text-shadow: 0px 0px 8px rgb(0, 0, 0);
+     background-color: rgba(0, 0, 0, 0.4);
+}
+ .panels .panel .text .title {
+	 font-weight: 700;
+	 font-size: 1.5em;
+	 margin-bottom: 0.5em;
+}
+ .panels .panel .text .author {
+	 font-weight: 400;
+	 font-size: 0.9em;
+	 margin-bottom: 1.8em;
+}
+ .panels .panel .text .mobile {
+	font-weight: 200;
+	font-size: 1em;
+	margin-bottom: 1em;
+} 
+ .panels .panel .text .link {
+	 display: inline-block;
+	 padding: 0.3em 0.5em;
+	 background: #FF4533;
+	 text-align: center;
+	 opacity: 0;
+	 font-size: 0.9em;
+	 justify-content: center;
+	 margin-right: 10%;
+}
+.nahi{
+	padding: 0 !important;
+}
+ .panels .panel.hover, .panels .panel:hover {
+	 outline: 0.875em solid #FF4533;
+	 transition: 300ms;
+}
+ .panels .panel.hover .background, .panels .panel:hover .background {
+	 transition: 125ms;
+	 top: -0.5em;
+	 left: -0.5em;
+	 right: -0.5em;
+	 bottom: -0.5em;
+}
+ .panels .panel.hover .background:after, .panels .panel:hover .background:after {
+	 opacity: 1;
+}
+ .panels .panel.hover .text > *, .panels .panel:hover .text > * {
+	 transform: translate3d(0, -3.5rem, 0);
+}
+ .panels .panel.hover .text .location, .panels .panel:hover .text .location {
+	 transition-delay: 0ms;
+}
+ .panels .panel.hover .text .title, .panels .panel:hover .text .title {
+	 transition-delay: 60ms;
+}
+ .panels .panel.hover .text .author, .panels .panel:hover .text .author {
+	 transition-delay: 110ms;
+}
+.panels .panel.hover .text .mobile, .panels .panel:hover .text .mobile {
+	transition-delay: 110ms;
+}
+ .panels .panel.hover .text .link, .panels .panel:hover .text .link {
+	 opacity: 1;
+	 transition-delay: 150ms;
+}
+
+.custom-background{
+	background:rgb(0, 0, 0);
+}
+
+.breaker{
+	width:50px;
+	padding:2px;
+	background:white;
+	margin:0 auto;
+}
