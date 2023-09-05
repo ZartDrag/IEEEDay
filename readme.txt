@@ -1,1 +1,1 @@
-Website for BVICAM's upcoming hackathon.
+Website for BVICAM's upcoming IEEE Day - TechMedia Fest 2.0
