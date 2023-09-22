@@ -55,6 +55,6 @@ const countDownClock = (number = 100, format = "seconds") => {
 
 var startDate = new Date();
 // Do your operations
-var endDate = new Date("6 october 2023");
+var endDate = new Date("12 october 2023");
 var seconds = (endDate.getTime() - startDate.getTime()) / 1000 + 28800;
 countDownClock(seconds, "seconds");
